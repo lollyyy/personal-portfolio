@@ -1,0 +1,29 @@
+{
+  "name": "portfolio4me",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "config/index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lollyyy/personal-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "node",
+    "express",
+    "react"
+  ],
+  "author": "Jaakko Ihanamäki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lollyyy/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/lollyyy/personal-portfolio#readme"
+}
