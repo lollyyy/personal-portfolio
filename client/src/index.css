@@ -17,3 +17,8 @@ code {
   width: 75vw;
   margin: 0 auto;
 }
+
+img {
+  width: 25%;
+  height: auto;
+}
