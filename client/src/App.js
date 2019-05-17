@@ -4,8 +4,9 @@ const App = () => {
 
   return(
     <div>
-    <h1>Hello World!</h1>
-    <p>This is Jaakko's personal portfolio</p>
+      <h1>Hello World!</h1>
+      <p>This is Jaakko's personal portfolio</p>
+      <p>asdasfa</p>
     </div>
   )
 }

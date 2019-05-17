@@ -19,34 +19,6 @@ app.listen(port, function() {
   console.log('App listening on', port)
 });
 
-
-
-//Get Github repos
-
-//HTTP headers and options
-const options = {
-  url: 'https://www.api.github.com/users/defunkt',
-  headers: {
-    'Accept': 'application/vnd.github.v3+json',
-    'User-Agent': 'lollyyy'
-  }
-}
-
-//Define callback function for request
-function callback(error, response, body) {
-  console.error('error:', error); //Log errors
-  console.log('statusCode:', response && response.statusCode); //Log HTTP response
-  app.get("/github", function(req, res) {
-    res.set('Content-Type', 'application/json')
-    res.send(body)
-  })
-}
-
-//Make HTTP request
-request(options, callback);
-
-
-
 //Basic error handling
 app.use(function (err, req, res, next) {
   console.error(err.stack)
