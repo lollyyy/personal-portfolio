@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 code {
@@ -23,6 +24,18 @@ img {
   margin: 0 auto;
 }
 
+.gh-link {
+  text-decoration: none;
+  color:inherit;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+.gh-link:hover {
+  color: #efefef;
+}
+
 .repo-wrap {
   height: auto;
   width: 100%;
@@ -31,9 +44,14 @@ img {
   flex-wrap: wrap;
 }
 
+.repo-wrap h2{
+  width: 100%;
+  text-align: center;
+}
+
 .gh-repo {
   border: 2px solid #404040;
-  margin: 2rem;
   padding: 2rem;
-  max-width: 45%;
+  width: 50%;
+  word-wrap: break-word;
 }

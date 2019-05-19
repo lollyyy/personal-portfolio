@@ -21,10 +21,16 @@ componentDidMount() {
   .then(data => {
     const repos = data.map((repo) => {
       return (
+        <>
+        <a class='gh-link' key={repo.html_url} href={repo.html_url}>
         <div class='gh-repo' key={repo.id}>
           <p key={repo.name}>{repo.name}</p>
-          <a key={repo.url} href={repo.url}>Link to repo</a>
+          <p>Created at {repo.created_at}</p>
+          <p>Language: {repo.language}</p>
+          <p>{repo.description}</p>
         </div>
+        </a>
+        </>
       )
     })
   this.setState({response: repos})
