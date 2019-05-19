@@ -3,7 +3,6 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const request = require('request')
 
 //Serve React app from React's build directory
 app.use(express.static(path.join(__dirname, '../client/build')));
