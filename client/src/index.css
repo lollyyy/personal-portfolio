@@ -13,12 +13,27 @@ code {
     monospace;
 }
 
-#root div {
-  width: 75vw;
-  margin: 0 auto;
-}
-
 img {
   width: 25%;
   height: auto;
+}
+
+.main-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.repo-wrap {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.gh-repo {
+  border: 2px solid #404040;
+  margin: 2rem;
+  padding: 2rem;
+  max-width: 45%;
 }
